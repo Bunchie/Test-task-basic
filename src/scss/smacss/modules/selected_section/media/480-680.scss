@@ -1,0 +1,130 @@
+@media only screen and (min-device-width: 480px) and (max-device-width: 680px) {
+
+  .selected_section {
+    margin-top: 15px;
+
+    .selected_section_part_1 {
+
+      .selected_section_title_part_1 {
+        padding: 0px;
+        text-align: center;
+
+        span::before {
+          content: "FOR GAMERS BY GAMERS TEE"
+        }
+
+      }
+
+    }
+
+    .selected_section_part_2 {
+
+      .selected_section_item{
+        margin-top: 15px;
+      }
+
+      .selected_section_title_part_2 {
+
+        span::before {
+          content: ""
+        }
+
+      }
+
+      .selected_section_description {
+        font-family: "Open Sans";
+
+        .selected_section_description_title {
+
+          span:before {
+            width: 61px;
+            height: 10px;
+            color: #282828;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+            content: "DETAILS:"
+          }
+
+        }
+
+      }
+
+      .selected_section_select_a_size {
+        text-align: left;
+
+        .select_a_size_title {
+          float: none;
+          color: #2c303d;
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 10px;
+          line-height: 32.5px;
+          letter-spacing: 1px;
+          display: inline-block;
+          text-transform: uppercase;
+
+          span::before {
+            width: 61px;
+            height: 10px;
+            color: #282828;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            text-transform: uppercase;
+            content: "SELECT A SIZE:";
+          }
+
+        }
+
+        .select_a_size_items {
+          padding: 0px;
+
+          .select_a_size_items_ul {
+            margin: 0px;
+
+            .select_a_size_items_ul_li:not(:first-child) {
+              margin-left: 3%;
+            }
+
+          }
+
+        }
+
+      }
+
+      .selected_section_add_to_cart {
+        margin-top: 0px;
+        margin-left: 5px;
+      }
+
+      .selected_section_stars {
+        float: none;
+      }
+
+      .selected_section_social {
+        display: block;
+
+        .selected_section_social_ul {
+          position: absolute;
+          left: 20px;
+          top: 65px;
+
+          .selected_section_social_ul_li {
+            display: block;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .selected_section_social_popover_wrapper {
+    display: none;
+  }
+
+}

@@ -5,7 +5,7 @@ module.exports = {
   entry: ['./src/js/index.js', './src/scss/main.scss'],
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist/')
+    path: path.resolve(__dirname, 'public/')
   },
   module: {
     rules: [
@@ -13,16 +13,21 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          //resolve-url-loader may be chained before sass-loader if necessary
           use: ['css-loader', 'sass-loader']
         })
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          'file-loader'
+        ],
+      }
     ]
   },
   plugins: [
-    new ExtractTextPlugin({ // define where to save the file
-      filename: 'css/style.css',
+    new ExtractTextPlugin({
+      filename: 'style.css',
       allChunks: true,
     }),
-  ]
+  ], watch: true
 };

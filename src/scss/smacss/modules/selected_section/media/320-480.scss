@@ -1,0 +1,138 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  .selected_section {
+    margin-top: 15px;
+
+    .selected_section_part_1,
+    .selected_section_part_2 {
+      display: block;
+      width: auto;
+    }
+
+    .selected_section_part_1 {
+
+      .selected_section_title_part_1 {
+
+        span::before {
+          line-height: 35px;
+          padding-right: 20%;
+          letter-spacing: 1.2px;
+          content: "FOR GAMERS BY GAMERS TEE"
+        }
+
+      }
+
+    }
+
+    .selected_section_part_2 {
+
+      .selected_section_title_part_2 {
+
+        span::before {
+          content: ""
+        }
+
+      }
+
+      .selected_section_item {
+        font-size: 12px;
+      }
+
+      .selected_section_price {
+        font-size: 36px;
+        padding: 0px 0px 0px 10%;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        span:first-child {
+          margin-right: 15px;
+        }
+
+      }
+
+      .selected_section_description {
+        padding: 0px 10%;
+
+        span {
+          font-size: 14px;
+        }
+
+      }
+
+      .selected_section_select_a_size {
+        padding: 0px;
+
+        .select_a_size_title {
+          float: none;
+          color: #2c303d;
+          font-size: 20px;
+          font-weight: 700;
+          margin-top: 30px;
+          line-height: 32.5px;
+          letter-spacing: 1px;
+          display: inline-block;
+          text-transform: uppercase;
+
+          span::before {
+            content: "SELECT A SIZE";
+            margin: 0px;
+          }
+
+        }
+
+        .select_a_size_items {
+          padding: 0px;
+          text-align: center;
+
+          .select_a_size_items_ul {
+            margin: 0px auto;
+            padding: inherit;
+
+            .select_a_size_items_ul_li {
+              margin: 3%;
+              float: none;
+            }
+
+          }
+
+        }
+
+      }
+
+      .selected_section_add_to_cart {
+        padding: 0px;
+        text-align: center;
+
+        button {
+          width: 280px;
+          height: 57px;
+        }
+
+      }
+
+      .selected_section_stars {
+        float: none;
+      }
+
+      .selected_section_social {
+        display: block;
+
+        .selected_section_social_ul {
+
+          .selected_section_social_ul_li:not(:first-child) {
+            margin-left: 3%;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .selected_section_social_popover_wrapper {
+    display: none;
+  }
+
+}

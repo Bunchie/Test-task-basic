@@ -1,0 +1,8 @@
+.container {
+  margin: 0 auto;
+  max-width: 835px;
+}
+
+@import "./media/680-835";
+@import "./media/480-680";
+@import "./media/320-480";

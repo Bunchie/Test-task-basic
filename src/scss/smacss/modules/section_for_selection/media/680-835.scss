@@ -1,0 +1,63 @@
+@media only screen and (min-device-width: 680px) and (max-device-width: 835px) {
+
+  .section_for_selection {
+
+    .section_for_selection_title {
+      text-align: left;
+    }
+
+    .section_for_selection_items {
+      height: auto;
+
+      .section_for_selection_items_arrow_prev,
+      .section_for_selection_items_arrow_next {
+        display: none;
+      }
+
+      .section_for_selection_items_collection {
+        width: 100%;
+        display: inline-block;
+
+        .section_for_selection_items_collection_item {
+
+          .section_for_selection_items_collection_item_my_slide {
+            margin: 5px;
+            position: relative;
+            display: inline-block;
+
+            img {
+              width: 265px;
+              height: 265px;
+              object-fit: cover;
+              max-width: 100%;
+            }
+
+            .section_for_selection_items_collection_item_my_slide_price {
+              height: 30px;
+              opacity: 0.8;
+              right: 0px;
+              width: auto;
+              position: absolute;
+              background-color: #8ae6cf;
+
+              span {
+                line-height: 32px;
+                color: #2c303d;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 1.65px;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

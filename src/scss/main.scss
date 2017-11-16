@@ -2,3 +2,7 @@
 @import "variables";
 
 // SMACSS
+@import "smacss/state/price/index";
+@import "smacss/layout/container/index";
+@import "smacss/modules/selected_section/selected_section";
+@import "smacss/modules/section_for_selection/section_for_selection";

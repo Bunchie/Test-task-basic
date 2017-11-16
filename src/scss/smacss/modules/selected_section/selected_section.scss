@@ -1,0 +1,327 @@
+.selected_section {
+  margin-top: 15px;
+
+  .selected_section_part_1,
+  .selected_section_part_2 {
+    width: 49%;
+    float: left;
+    display: inline-block;
+
+    .selected_section_title_part_1,
+    .selected_section_title_part_2 {
+      font-family: Oswald;
+      padding: 0px 0px 0px 10%;
+
+      span {
+        color: #282828;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+      }
+
+    }
+
+    .selected_section_title_part_2 {
+
+      span::before {
+        content: "FOR GAMERS BY GAMERS TEE"
+      }
+
+    }
+
+  }
+
+  .selected_section_part_1 {
+
+    .selected_section_image {
+
+      img {
+        max-width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+  }
+
+  .selected_section_part_2 {
+    font-family: "Open Sans";
+
+    .selected_section_item {
+      font-size: 10px;
+      padding: 0px 0px 0px 10%;
+      font-family: "Open Sans";
+
+      span {
+        opacity: 0.7;
+        color: #2c303d;
+        font-weight: 400;
+        line-height: 32.5px;
+        letter-spacing: 0.6px;
+      }
+
+    }
+
+    .selected_section_price {
+      font-size: 24px;
+      padding: 0px 0px 0px 10%;
+      font-weight: 700;
+      text-transform: uppercase;
+
+      span:first-child {
+        margin-right: 30px;
+      }
+
+    }
+
+    .selected_section_stars {
+      float: left;
+      padding: 0px 0px 0px 10%;
+      margin-top: 10px;
+
+      .stars-title {
+        width: 100px;
+      }
+
+      div.stars {
+        display: inline-block;
+      }
+
+      input.star {
+        display: none;
+      }
+
+      label.star {
+        color: #444;
+        float: right;
+        padding: 1px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .2s;
+      }
+
+      input.star:checked ~ label.star:before {
+        color: #ce2c52;
+        content: '\2605';
+        transition: all .25s;
+      }
+
+      input.star-5:checked ~ label.star:before {
+        color: #ce2c52;
+      }
+
+      input.star-1:checked ~ label.star:before {
+        color: #F62;
+      }
+
+      label.star:hover {
+        transform: rotate(-15deg) scale(1.3);
+      }
+
+      label.star:before {
+        content: '\2606';
+        font-family: FontAwesome;
+      }
+
+    }
+
+    .selected_section_social {
+      display: none;
+      padding: 0px 0px 0px 10%;
+      margin-top: 21px;
+
+      .selected_section_social_ul {
+        padding: 0px;
+        list-style-type: none;
+
+        .selected_section_social_ul_li {
+          display: inline-block;
+          margin: 3px;
+
+          img {
+            width: 39px;
+            height: 39px;
+          }
+
+        }
+
+      }
+
+    }
+
+    .selected_section_description {
+      padding: 0px 0px 0px 10%;
+
+      span {
+        color: #282828;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0.35px;
+      }
+    }
+
+    .selected_section_select_a_size {
+      padding: 0px 0px 0px 10%;
+      text-align: center;
+
+      .select_a_size_title {
+        float: left;
+        color: #2c303d;
+        font-size: 14px;
+        font-weight: 700;
+        margin-top: 5px;
+        line-height: 32.5px;
+        letter-spacing: 1px;
+        display: inline-block;
+        text-transform: uppercase;
+
+        span::before {
+          content: "SIZE:";
+          margin-right: 10px;
+        }
+
+      }
+
+      .select_a_size_items {
+        padding: 0px 0px 0px 10%;
+
+        .select_a_size_items_ul {
+          list-style-type: none;
+          padding: 0px;
+
+          .select_a_size_items_ul_li {
+            display: inline-block;
+            margin-right: 15px;
+            cursor: pointer;
+            float: left;
+          }
+
+        }
+
+      }
+
+    }
+
+    .selected_section_add_to_cart {
+      margin-top: 15px;
+      margin-bottom: 70px;
+      padding: 0px 0px 0px 10%;
+
+      button {
+        width: 214px;
+        height: 44px;
+        border: none;
+        color: #2c303d;
+        font-size: 18px;
+        cursor: pointer;
+        font-weight: 700;
+        margin-top: 15px;
+        border-radius: 50px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        background-color: #8ae6cf;
+      }
+
+    }
+
+  }
+
+}
+
+.selected_section_social_popover_wrapper {
+  font-size: 18px;
+  font-weight: 700;
+
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.45px;
+  a p {
+    margin-top: 13px;
+    margin-left: 30px;
+  }
+
+  a :active,
+  a :hover,
+  a {
+    color: #2c87ce;
+    text-decoration: none;
+  }
+}
+
+.selected_section_social_popover_content {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  left: -80px;
+  top: 60px;
+  transform: translate(0, 10px);
+  background-color: white;
+  width: 287px;
+  height: 115px;
+  border: 1px solid gray;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+
+  .selected_section_social_popover_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .selected_section_social_popover_message {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
+  ul {
+    padding: 0px;
+    margin-top: 40px;
+    text-align: center;
+    list-style-type: none;
+    li {
+      margin: 1%;
+      display: inline-block;
+      img {
+        width: 41px;
+        height: 41px;
+      }
+    }
+  }
+}
+
+.selected_section_social_popover_content:before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  right: calc(50% - 10px);
+  top: -8px;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent gray transparent;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.selected_section_social_popover_wrapper:hover .selected_section_social_popover_content {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.selected_section_social_popover_message {
+  color: #2c87ce;
+  text-align: center;
+}
+
+@import "./media/680-835";
+@import "./media/480-680";
+@import "./media/320-480";
